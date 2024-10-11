@@ -15,9 +15,9 @@ function outputWeatherData(weatherData) {
 }
 async function getWeatherData(eventObj) {
     eventObj.preventDefault();
-    const apiKey = '01b957818c63901e03654fe7ca33d042';
+    // const apiKey = '01b957818c63901e03654fe7ca33d042';
     const cityInput = document.querySelector('#city');
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityInput.value}&units=imperial&appid=` + apiKey;
+    // const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityInput.value}&units=imperial&appid=` + apiKey;
     const resObject = await fetch(url);
     const data = await resObject.json();
     outputWeatherData(data);
@@ -25,7 +25,7 @@ async function getWeatherData(eventObj) {
 cityForm.addEventListener('submit', getWeatherData);
 // getWeatherData();
 async function getStarWarsData() {
-    const resObject = await fetch('https://swapi.dev/api/people');
+    // const resObject = await fetch('https://swapi.dev/api/people');
     const data = await resObject.json();
     console.log(data);
 }
