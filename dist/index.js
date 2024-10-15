@@ -1,3 +1,4 @@
+"use strict";
 // Add an input to the page that the user can type a city into
 // When they submit or hit a button, you should grab the city they typed and make a request to the weather api to get the current weather by that city name
 // Once you have the weather data, output the current temp, wind speed and humidity
