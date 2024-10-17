@@ -9,6 +9,7 @@
     "compiler": "cd ./server && npm run compiler",
     "server:dev": "cd ./server && npm run dev",
     "dev": "concurrently \"npm run compiler\" \"npm run server:dev\" \"npm run client:dev\"",
+    "install": "cd ./server && npm i",
     "start": "cd ./server && npm start"
   },
   "keywords": [],
